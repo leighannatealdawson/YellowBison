@@ -39,7 +39,7 @@ ggplot() +
   # Paws
   geom_point(aes(x=c(4.2,4.8,5.2,5.8), y=c(4,4,4,4)), color="saddlebrown", size=4) +
   # Fun text
-  annotate("text", x=5, y=3.5, label="Prrr! 🐾", size=8, color="darkgreen", fontface="bold") +
+  annotate("text", x=5, y=3.5, label="Prrr! 🐾", size=8, color="darkred", fontface="bold") +
   # Graph adjustments
   xlim(0,10) + ylim(0,10) +
   labs(title="Cute Pine Marten Graph 🌲") +
@@ -47,3 +47,5 @@ ggplot() +
   theme(axis.title=element_blank(), axis.text=element_blank(), axis.ticks=element_blank(),
         plot.title=element_text(face="bold", hjust=0.5))
 
+#this is dogshit
+#even chef ramsey couldet fix this!
