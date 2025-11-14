@@ -39,7 +39,7 @@ ggplot() +
   # Paws
   geom_point(aes(x=c(4.2,4.8,5.2,5.8), y=c(4,4,4,4)), color="saddlebrown", size=4) +
   # Fun text
-  annotate("text", x=5, y=3.5, label="Susan", size=8, color="black", fontface="bold") +
+  annotate("text", x=5, y=3.5, label="Susan", size=8, color="orange", fontface="bold") +
   # Graph adjustments
   xlim(0,10) + ylim(0,10) +
   labs(title="Cute Pine Marten Graph 🌲") +
