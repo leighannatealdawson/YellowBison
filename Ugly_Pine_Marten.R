@@ -22,24 +22,24 @@ eye_right <- data.frame(x=5.5, y=6.5)
 # Plot
 ggplot() +
   # Body
-  geom_polygon(data=body, aes(x,y), fill="saddlebrown", color="black") +
+  geom_polygon(data=body, aes(x,y), fill="purple", color="black") +
   # Head
-  geom_polygon(data=head, aes(x,y), fill="saddlebrown", color="black") +
+  geom_polygon(data=head, aes(x,y), fill="yellow", color="black") +
   # Ears
-  geom_polygon(data=ear_left, aes(x,y), fill="saddlebrown", color="black") +
-  geom_polygon(data=ear_right, aes(x,y), fill="saddlebrown", color="black") +
+  geom_polygon(data=ear_left, aes(x,y), fill="blue", color="black") +
+  geom_polygon(data=ear_right, aes(x,y), fill="red", color="black") +
   # Tail
   geom_segment(data=tail, aes(x=x[1], y=y[1], xend=x[2], yend=y[2]),
-               color="saddlebrown", size=6, lineend="round") +
+               color="green", size=6, lineend="round") +
   # Eyes
   geom_point(data=eye_left, aes(x=x, y=y), color="white", size=3) +
   geom_point(data=eye_right, aes(x=x, y=y), color="white", size=3) +
-  geom_point(data=eye_left, aes(x=x, y=y), color="black", size=1.5) +
-  geom_point(data=eye_right, aes(x=x, y=y), color="black", size=1.5) +
+  geom_point(data=eye_left, aes(x=x, y=y), color="red", size=1.5) +
+  geom_point(data=eye_right, aes(x=x, y=y), color="red", size=1.5) +
   # Paws
   geom_point(aes(x=c(4.2,4.8,5.2,5.8), y=c(4,4,4,4)), color="saddlebrown", size=4) +
   # Fun text
-  annotate("text", x=5, y=3.5, label="Prrr! 🐾", size=8, color="darkred", fontface="bold") +
+  annotate("text", x=5, y=3.5, label="Susan", size=8, color="black", fontface="bold") +
   # Graph adjustments
   xlim(0,10) + ylim(0,10) +
   labs(title="Cute Pine Marten Graph 🌲") +
